@@ -14,11 +14,13 @@ services:
       - pg_data:/var/lib/postgresql/data
 
   backend:
-    needs: db
+    depends_on: 
+      - db
     image: domenen/kittygram_backend
     env_file: .env
     volumes:
       - static:/backend_static
+      - media:/app/media
 
   frontend:
     env_file: .env
@@ -28,9 +30,12 @@ services:
       - static:/frontend_static
 
   gateway:
-    needs: backend, frontend
+    depends_on:
+      - backend
+      - frontend
     image: domenen/kittygram_gateway
     volumes:
       - static:/staticfiles/
+      - media:/app/media
     ports:
       - 9000:80
