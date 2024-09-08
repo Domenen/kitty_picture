@@ -2,8 +2,6 @@ name: Main Taski workflow
 
 on:
   push:
-    branches:
-      - '*'
 
 jobs:
   tests:
@@ -179,4 +177,3 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: Новый деплой от ${{ github.actor }}, коммит - ${{ github.event.commits[0].message }}
-
