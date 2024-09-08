@@ -1,4 +1,4 @@
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![example event parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?event=push)
 Kittygram - сайт для того чтоб делиться своими питомцами. Вы можете выложить фотографию своего питомца , так же указать его достижения. Можете посмотреть на питомцев других людей.
 
 ### Технологический стек:
