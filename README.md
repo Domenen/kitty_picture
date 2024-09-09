@@ -1,4 +1,4 @@
-![example event parameter](https://github.com/domenen/kittygram_final/actions/workflows/main.yml/badge.svg?event=push)
+![example event parameter](https://github.com/Domenen/kittygram_final/actions/workflows/main.yml/badge.svg)
 Kittygram - сайт для того чтоб делиться своими питомцами. Вы можете выложить фотографию своего питомца , так же указать его достижения. Можете посмотреть на питомцев других людей.
 
 ### Технологический стек:
